@@ -1,0 +1,6 @@
+---
+
+- name: Creating "prod" directory
+  file:
+   path: /opt/prod
+   state: directory

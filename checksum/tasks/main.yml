@@ -1,2 +1,3 @@
 ---
 # tasks file for checksum
+- include_tasks: prod_files.yml
