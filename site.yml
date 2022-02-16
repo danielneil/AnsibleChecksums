@@ -1,0 +1,8 @@
+---
+- name: Running checksum code
+  hosts: localhost
+  connection: local 
+  become: true
+  
+  roles:
+   - checksum
