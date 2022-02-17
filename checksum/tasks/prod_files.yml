@@ -1,0 +1,17 @@
+---
+
+- name: Creating "prod" directory
+  file:
+   path: /opt/prod
+   state: directory
+
+- name: Copying test data into prod dir
+  copy:
+    src: "{{ item }}"
+    dest: /opt/prod
+  with_items:
+   - prodTestFile1
+   - prodTestFile2
+   - prodTestFile3
+   - prodTestFile_4
+   - prodTestFile_5
